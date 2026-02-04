@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+import model.*;
 
 public class CSVLoader {
 
@@ -7,8 +8,8 @@ public class CSVLoader {
         System.out.println("test");
     }
 
-    public static List<model.Student> loadStudents(String filePath) {
-        List<model.Student> students = new ArrayList<>();
+    public static List<Student> loadStudents(String filePath) {
+        List<Student> students = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line = br.readLine(); // skip header
@@ -20,7 +21,7 @@ public class CSVLoader {
                 String name = data[1];
                 double gpa = Double.parseDouble(data[2]);
 
-                students.add(new model.Student(id, name, gpa));
+                students.add(new Student(id, name, gpa));
             }
 
         } catch (IOException e) {

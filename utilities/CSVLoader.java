@@ -1,12 +1,9 @@
+package utilities;
 import java.io.*;
 import java.util.*;
 import model.*;
 
 public class CSVLoader {
-
-    public static void main(String[] args) {
-        System.out.println("test");
-    }
 
     public static List<Student> loadStudents(String filePath) {
         List<Student> students = new ArrayList<>();

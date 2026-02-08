@@ -15,10 +15,11 @@ public class CSVLoader {
                 String[] data = line.split(",");
 
                 int id = Integer.parseInt(data[0]);
-                String name = data[1];
-                double gpa = Double.parseDouble(data[2]);
+                String firstName = data[1];
+                String lastName = data[2];
+                double gpa = Double.parseDouble(data[3]);
 
-                students.add(new Student(id, name, gpa));
+                students.add(new Student(id, firstName, lastName, gpa));
             }
 
         } catch (IOException e) {

@@ -2,12 +2,18 @@ package model;
 
 public class Student {
     double gpa;
-    String name;
+    String firstName;
+    String lastName;
     int id;
 
-    public Student(int id, String name, double gpa) {
+    public Student(int id, String firstName, String lastName, double gpa) {
         this.gpa = gpa;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.id = id;
+    }
+
+    public String toString() {
+        return "Student{id=" + id + ", firstName='" + firstName + "', lastName='" + lastName + "', gpa=" + gpa + "}";
     }
 }

@@ -13,6 +13,22 @@ public class Student {
         this.id = id;
     }
 
+    public int getId() {
+        return id;
+    }
+    
+    public double getGpa() {
+        return gpa;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
     public String toString() {
         return "Student{id=" + id + ", firstName='" + firstName + "', lastName='" + lastName + "', gpa=" + gpa + "}";
     }

@@ -4,13 +4,13 @@ import model.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import algorithms.SearchAlgorithms;
+import algorithms.*;
 
 public class Main {
     public static void main(String[] args) {
 
         List<Student> data = CSVLoader.loadStudents("data/students_large.csv");
-        SearchAlgorithms.sortByID(data);
+        SortAlgorithms.sortByID(data);
 
         // ----- SEARCH TESTS -----
         long linearTime = Timer.timeSearch(() ->
@@ -28,15 +28,15 @@ public class Main {
         List<Student> bubbleData = cloneList(data);
         List<Student> mergeData = cloneList(data);
 
-        long heapTime = Timer.timeSort(() ->
-                SearchAlgorithms.heapSort(bubbleData)
+        long bubbleTime = averageTime(() ->
+                SortAlgorithms.bubbleSort(bubbleData), 10
         );
 
-        long mergeTime = Timer.timeSort(() ->
-                SearchAlgorithms.mergeSort(mergeData)
+        long mergeTime = averageTime(() ->
+                SortAlgorithms.mergeSort(mergeData), 10
         );
 
-        System.out.println("Heap Sort Time: " + heapTime + " ns");
+        System.out.println("Bubble Sort Time: " + bubbleTime + " ns");
         System.out.println("Merge Sort Time: " + mergeTime + " ns");
     }
 

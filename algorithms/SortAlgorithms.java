@@ -117,7 +117,7 @@ public class SortAlgorithms {
     public static void insertionSort(List<Student> students) {
         for (int i = 1; i < students.size(); i++) {
             int j = i;
-            while(j>=0 && students.get(j).getGpa() < students.get(j-1).getGpa()) {
+            while(j>=1 && students.get(j).getGpa() < students.get(j-1).getGpa()) {
                 swap(students, j, j-1);
                 j--;
             }
@@ -171,6 +171,10 @@ public class SortAlgorithms {
             quickSort(students, low, pi - 1);
             quickSort(students, pi + 1, high);
         }
+    }
+
+    public static void quickSort(List<Student> students) {
+        quickSort(students, 0, students.size() - 1);
     }
 
     public static void heapSort(List<Student> students) {

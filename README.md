@@ -10,3 +10,11 @@ Bubble Sort    | Large Increase     | O(n^2)     | Second Slowest for all sample
 Merge Sort     | Grows Slowly       | O(n log n) | Slowest compared to other O(n log n) sorts  
 Quick Sort     | Grows Slowly       | O(n log n) | Nearly Linear growth                        
 Heap Sort      | Grows Slowly       | O(n log n) | Slightly faster than quick sort             
+
+<p align="center">
+  <img src="https://github.com/S-erenity/School-Record-System/blob/main/images/searchchart.png?raw=true" alt="Search Algorithms" width="300"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/S-erenity/School-Record-System/blob/main/images/sortchart.png?raw=true" alt="Sort Algorithms" width="300"/>
+</p>

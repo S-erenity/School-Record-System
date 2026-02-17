@@ -12,9 +12,9 @@ Quick Sort     | Grows Slowly       | O(n log n) | Nearly Linear growth
 Heap Sort      | Grows Slowly       | O(n log n) | Slightly faster than quick sort             
 
 <p align="center">
-  <img src="https://github.com/S-erenity/School-Record-System/blob/main/images/searchchart.png?raw=true" alt="Search Algorithms" width="300"/>
+  <img src="https://github.com/S-erenity/School-Record-System/blob/main/images/searchchart.png?raw=true" alt="Search Algorithms" width="1000"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/S-erenity/School-Record-System/blob/main/images/sortchart.png?raw=true" alt="Sort Algorithms" width="300"/>
+  <img src="https://github.com/S-erenity/School-Record-System/blob/main/images/sortchart.png?raw=true" alt="Sort Algorithms" width="1000"/>
 </p>

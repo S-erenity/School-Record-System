@@ -18,3 +18,9 @@ Heap Sort      | Grows Slowly       | O(n log n) | Slightly faster than quick so
 <p align="center">
   <img src="https://github.com/S-erenity/School-Record-System/blob/main/images/sortchart.png?raw=true" alt="Sort Algorithms" width="500"/>
 </p>
+
+## Recomendations
+
+If the data is already sorted, then binary search would be the best. However, if the data is not sorted, even if you use the fastest sorting algorithm in the chart, binary search would still be slower than linear search.
+
+From the charts, Heap sort is the fastest sorting algorithm except for small sample sizes. So, insertion sort would be recommended for sorting a single class and heap sort would be recommended for sorting an entire grade or school. This makes sense due to O(n log n) (heap sort) vs O(n) (insertion sort) time.

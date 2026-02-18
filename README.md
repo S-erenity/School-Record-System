@@ -19,6 +19,8 @@ Heap Sort      | Grows Slowly       | O(n log n) | Slightly faster than quick so
   <img src="https://github.com/S-erenity/School-Record-System/blob/main/images/sortchart.png?raw=true" alt="Sort Algorithms" width="500"/>
 </p>
 
+[Data](https://docs.google.com/spreadsheets/d/1ecJnQJfwWGtt8qCLVQHvVmgZBUPP_WQhpxsSVMDMxGE/edit?usp=sharing)
+
 ## Recomendations
 
 If the data is already sorted, then binary search would be the best. However, if the data is not sorted, even if you use the fastest sorting algorithm in the chart, binary search would still be slower than linear search, so for only 1 search linear search would be better.

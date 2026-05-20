@@ -3,6 +3,7 @@ import model.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 import algorithms.*;
 
@@ -33,27 +34,27 @@ public class Main {
         List<Student> insertionData = cloneList(data);
 
         long bubbleTime = averageTime(() ->
-                SortAlgorithms.bubbleSort(bubbleData), 10
+                SortAlgorithms.bubbleSort(bubbleData), 1
         );
 
         long mergeTime = averageTime(() ->
-                SortAlgorithms.mergeSort(mergeData), 10
+                SortAlgorithms.mergeSort(mergeData), 1
         );
 
         long quickTime = averageTime(() ->
-                SortAlgorithms.quickSort(quickData), 10
+                SortAlgorithms.quickSort(quickData), 1
         );
 
         long heapTime = averageTime(() ->
-                SortAlgorithms.heapSort(heapData), 10
+                SortAlgorithms.heapSort(heapData), 1
         );
 
         long selectionTime = averageTime(() ->
-                SortAlgorithms.selectionSort(selectionData), 10
+                SortAlgorithms.selectionSort(selectionData), 1
         );
 
         long insertionTime = averageTime(() ->
-                SortAlgorithms.insertionSort(insertionData), 10
+                SortAlgorithms.insertionSort(insertionData), 1
         );
 
         System.out.println("Bubble Sort Time: " + bubbleTime + " ns");
